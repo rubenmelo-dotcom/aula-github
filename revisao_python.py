@@ -1,14 +1,51 @@
-
-produtos = [
-    {'nome': 'p1', 'preco': 10},
-    {'nome': 'p2', 'preco': 20},
-    {'nome': 'p3', 'preco': 30},
+nomes = ['luiz', 'maria', 'helena', 'joana', 'felipe']
+novos_nomes = [
+    f'{nome[:-1].lower()}{nome[-1].upper()}'
+    for nome in nomes
 ]
+print(nomes)
+print()
+print(novos_nomes)
 
-produtos2 = [
-    {**produtos, produto for produto['preco'] * 2}
-]
 
+# original = [n for n in range(10)]
+# maior = [n for n in original if n > 5]
+# impares = [n for n in original if n % 2 != 0]
+# pares = [n for n in original if n % 2 == 0]
+# print(original)
+# print(maior)
+# print(impares)
+# print(pares)
+# print()
+# for x in range(10):
+#     print(x, sep='\n')
+#     for y in range(5):
+#         print(y, end=' ')
+#         if y == 4:
+#             print('\n')
+
+
+
+
+# produtos = [
+#     {'nome': 'p1', 'preco': 10},
+#     {'nome': 'p2', 'preco': 20},
+#     {'nome': 'p3', 'preco': 30},
+# ]
+
+# produtos2 = [
+#     {**produto, 'preco': produto['preco'] * 2}
+#     if produto['preco'] > 20 else {**produto}
+#     for produto in produtos
+#     if produto['preco'] > 10
+# ]
+
+# list_num = [(x, y) for x in range(3) for y in range(3)]
+
+# print(*produtos, sep='\n')
+# print()
+# print(*produtos2, sep='\n')
+# print(list_num)
 # lista = [n for n in range(10)]
 # lista_gen = (n for n in range(10))
 # print(lista)
